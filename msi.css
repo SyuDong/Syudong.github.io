@@ -1,0 +1,25 @@
+div {
+ 
+  position: absolute; /*不管該元素(DIV)多大，我們都可以先用position: absolute 讓元素放在中央。*/
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -150px;
+}
+
+table, th, td {
+    width: 300px ;
+    height:40px;
+    border-collapse:collapse;  
+    border: 1px solid black;
+
+}
+/*
+我們必須要再給予元素明確的高與寬，利用margin-top以及margin-left把元素往回推。往回推的數值就是(高/2）以及(寬/2）。如果高是300px，就往回推150px，依此類推
+*/
+
+
+
+
+
+
+
