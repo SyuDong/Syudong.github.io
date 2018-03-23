@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>example</title>
+<style type="text/css">
+
+   
+/* table */.table {  
+  display: table; 
+  border-collapse: collapse; 
+}  
+    /* table */.table1 {  
+  display: table; 
+  border-collapse: collapse; 
+         width: 500px; 
+}  
+
+/* tr */.row{
+display: table-row; border:solid 1px #000000;
+}
+
+/* td , th */.name {  
+  display: table-cell; 
+  width: 500px; 
+  border-right: 1px solid #000000; 
+  background:#fcd6d6;
+}  
+</style>
+    
+    
+    
+    
+</head>
+<body>
+    <form name="sign_in" onsubmit="myFunction()" >
+        <div class="table1">
+  <div class="table"><!-- table -->
+ <div class="row"><!-- tr --> 
+         <div class="name"><!-- td -->  
+           Name
+         </div> 
+     
+      <div class="name"><!-- td -->  
+           <input type="name" name="name" id="name" /><br />
+            
+         </div> 
+     </div> 
+      
+         
+      
+ <div class="row">
+         <div class="name"><!-- td -->  
+           Gender
+         </div> 
+     
+      <div class="name"><!-- td -->  
+       <input type="radio" name="gender" value="male" id="Gender" checked> Male
+              <input type="radio" name="gender" value="female" id="Gender">Female
+            
+         </div> 
+     </div>      
+      
+      
+      
+      
+      
+      
+      <div class="row"><!-- tr --> 
+         <div class="name"><!-- td -->  
+            Email
+         </div> 
+     
+      <div class="name"><!-- td -->  
+       <input type="email" name="email" id="email" />
+            
+         </div> 
+     </div>      
+      
+      
+      
+            <div class="row"><!-- tr --> 
+         <div class="name"><!-- td -->  
+            Favorite Sports
+         </div> 
+     
+      <div class="name"><!-- td -->  
+               <input type=checkbox value="Basketball" name="checkbox1" id="Favorite1"  > Basketball
+               <input type=checkbox value="Football" name="checkbox2" id="Favorite2"> Football
+               <input type=checkbox value="Tennis" name="checkbox3" id="Favorite3"> Tennis
+               <input type=checkbox value="Others" name="checkbox4"id="Favorite4"> Others
+            
+         </div> 
+          
+          
+          
+          
+          
+          
+          
+          
+     </div>     
+ 
+            
+           
+      </div> 
+            
+            
+                  <div ><!-- tr --> 
+         <div class="name"><!-- td -->  
+            Favorite Sports
+         </div> 
+     
+          <div class="name"><!-- td -->  
+            Favorite Sports
+         </div> 
+          
+           <div class="name"><!-- td -->  
+            Favorite Sports
+         </div> 
+          
+          
+          
+          
+          
+          
+     </div>   
+         <div  class="row" style="text-align:center;">
+   
+ 
+        <button type="submit" value="Submit"  >click me</button>
+           
+         </div>      
+        </div>
+        
+      </form>
+  
+</body>
+    
+    <script>
+function myFunction() {
+    
+     var name_element = document.getElementById('name');
+      var Gender_element = document.getElementById('Gender');
+      var email_element = document.getElementById('email');
+      var Favorite_element ;
+      var Favorite_element1 = document.getElementById('Favorite1');
+      var Favorite_element2 = document.getElementById('Favorite2');
+     var Favorite_element3 = document.getElementById('Favorite3');
+     var Favorite_element4 = document.getElementById('Favorite4');
+   var my_array = new Array(); 
+    var number;
+     
+    
+ 
+ if(innerHTM=Favorite_element1.checked==true){
+     Favorite_element=Favorite_element1.value;
+
+    }else  if(innerHTM=Favorite_element2.checked==true){
+          Favorite_element=Favorite_element2.value;
+    }else  if(innerHTM=Favorite_element3.checked==true){
+        Favorite_element=Favorite_element3.value;
+    }else  if(innerHTM=Favorite_element4.checked==true){
+        Favorite_element=Favorite_element4.value;
+         
+    }
+    
+ 
+    
+    if(!name_element.value){  
+         alert("請輸入輸入Email");
+    }else if(!Gender_element.value){
+         alert("請勾選Gender");
+    }else if(!email_element.value){
+         alert("輸入Email");
+    }else if(!Favorite_element){
+         alert("勾選Favorite");
+    } 
+     else{
+            
+               
+    }
+        
+    /*
+    if(innerHTM=Favorite_element1.checked==true){
+        my_array.push (Favorite_element1.value); 
+    }else  if(innerHTM=Favorite_element2.checked==true){
+           my_array.push (Favorite_element2.value); 
+    }else  if(innerHTM=Favorite_element3.checked==true){
+        my_array.push (Favorite_element3.value);
+    }else  if(innerHTM=Favorite_element4.checked==true){
+        my_array.push (Favorite_element4.value);
+    }else{
+         
+    }
+    */
+    //  alert(name_element.value);
+}
+</script>
+   
+</html>
+
+
+<!--
+-->
